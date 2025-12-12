@@ -601,7 +601,7 @@ TEST_F(DataEvolutionFileStoreScanTest, TestFilterManifestByRowRanges) {
         manifest1, {Range(0, 15), Range(100, 200)}));
     ASSERT_FALSE(DataEvolutionFileStoreScan::FilterManifestByRowRanges(
         manifest1, {Range(0, 5), Range(100, 200)}));
-    
+
     auto manifest2 =
         ManifestFileMeta("manifest-65b0d403-a1bc-4157-b242-bff73c46596d-0", /*file_size=*/2779,
                          /*num_added_files=*/1, /*num_deleted_files=*/0, SimpleStats::EmptyStats(),

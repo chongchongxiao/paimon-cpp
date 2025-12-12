@@ -46,7 +46,7 @@ set(PAIMON_COMMON_SRCS
     common/fs/file_system.cpp
     common/fs/resolving_file_system.cpp
     common/fs/file_system_factory.cpp
-    common/global_index/bitmap_topk_global_index_result.cpp    
+    common/global_index/bitmap_topk_global_index_result.cpp
     common/global_index/bitmap_global_index_result.cpp
     common/global_index/global_index_result.cpp
     common/global_index/global_indexer_factory.cpp
@@ -147,7 +147,7 @@ set(PAIMON_CORE_SRCS
     core/global_index/row_range_global_index_writer.cpp
     core/index/index_file_handler.cpp
     core/index/global_index_meta.cpp
-    core/index/index_file_meta_serializer.cpp    
+    core/index/index_file_meta_serializer.cpp
     core/io/meta_to_arrow_array_converter.cpp
     core/io/async_key_value_producer_and_consumer.cpp
     core/io/data_file_meta_09_serializer.cpp
@@ -180,7 +180,7 @@ set(PAIMON_CORE_SRCS
     core/manifest/manifest_file_meta_serializer.cpp
     core/manifest/manifest_list.cpp
     core/manifest/partition_entry.cpp
-    core/manifest/index_manifest_file_handler.cpp    
+    core/manifest/index_manifest_file_handler.cpp
     core/mergetree/compact/aggregate/aggregate_merge_function.cpp
     core/mergetree/compact/aggregate/field_sum_agg.cpp
     core/mergetree/compact/interval_partition.cpp

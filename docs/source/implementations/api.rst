@@ -33,5 +33,5 @@ API Reference
    api/global_index
    api/clean
    api/defs
-   api/executor 
-   api/memory 
+   api/executor
+   api/memory

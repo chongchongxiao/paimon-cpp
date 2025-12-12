@@ -81,7 +81,7 @@ return values between implementations.
 Type Change Support Matrix
 --------------------------
 
-The table below indicates support for changing a column type from `source` to `target`. Refer to the numbered notes below the table
+The table below indicates support for changing a column type from ``source`` to ``target``. Refer to the numbered notes below the table
 for caveats.
 
 .. list-table::

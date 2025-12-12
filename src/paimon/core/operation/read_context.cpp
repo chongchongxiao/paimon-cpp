@@ -209,11 +209,12 @@ Result<std::unique_ptr<ReadContext>> ReadContextBuilder::Finish() {
         return Status::Invalid("row to batch thread number should be greater than 0");
     }
     auto ctx = std::make_unique<ReadContext>(
-        impl_->path_, impl_->branch_, impl_->read_field_names_, impl_->predicate_, impl_->row_ranges_,
-        impl_->enable_predicate_filter_, impl_->enable_prefetch_, impl_->prefetch_batch_count_,
-        impl_->prefetch_max_parallel_num_, impl_->enable_multi_thread_row_to_batch_,
-        impl_->row_to_batch_thread_number_, impl_->table_schema_, impl_->memory_pool_,
-        impl_->executor_, impl_->fs_scheme_to_identifier_map_, impl_->options_);
+        impl_->path_, impl_->branch_, impl_->read_field_names_, impl_->predicate_,
+        impl_->row_ranges_, impl_->enable_predicate_filter_, impl_->enable_prefetch_,
+        impl_->prefetch_batch_count_, impl_->prefetch_max_parallel_num_,
+        impl_->enable_multi_thread_row_to_batch_, impl_->row_to_batch_thread_number_,
+        impl_->table_schema_, impl_->memory_pool_, impl_->executor_,
+        impl_->fs_scheme_to_identifier_map_, impl_->options_);
     impl_->Reset();
     return ctx;
 }
