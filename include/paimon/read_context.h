@@ -334,6 +334,10 @@ class PAIMON_EXPORT ReadContextBuilder {
 
     /// Sets a custom file system instance to be used for all file operations in this read context.
     /// This bypasses the global file system registry and uses the provided implementation directly.
+    ///
+    /// @param file_system The file system to use.
+    /// @return Reference to this builder for method chaining.
+    /// @note If not set, use default file system (configured in `Options::FILE_SYSTEM`)
     ReadContextBuilder& WithFileSystem(const std::shared_ptr<FileSystem>& file_system);
 
     /// Build and return a `ReadContext` instance with input validation.
